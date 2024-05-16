@@ -9,13 +9,13 @@ import time
 import uuid
 import logging
 
-from apps.web.models.users import UserModel, UserUpdateForm, UserRoleUpdateForm, Users
-from apps.web.models.auths import Auths
+from backend.apps.web.models.users import UserModel, UserUpdateForm, UserRoleUpdateForm, Users
+from backend.apps.web.models.auths import Auths
 
-from utils.utils import get_current_user, get_password_hash, get_admin_user
-from constants import ERROR_MESSAGES
+from backend.utils.utils import get_current_user, get_password_hash, get_admin_user
+from backend.constants import ERROR_MESSAGES
 
-from config import SRC_LOG_LEVELS
+from backend.config import SRC_LOG_LEVELS
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["MODELS"])

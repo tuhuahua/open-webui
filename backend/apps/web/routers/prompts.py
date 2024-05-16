@@ -6,10 +6,10 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 import json
 
-from apps.web.models.prompts import Prompts, PromptForm, PromptModel
+from backend.apps.web.models.prompts import Prompts, PromptForm, PromptModel
 
-from utils.utils import get_current_user, get_admin_user
-from constants import ERROR_MESSAGES
+from backend.utils.utils import get_current_user, get_admin_user
+from backend.constants import ERROR_MESSAGES
 
 router = APIRouter()
 

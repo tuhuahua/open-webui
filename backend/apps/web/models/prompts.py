@@ -4,10 +4,10 @@ from playhouse.shortcuts import model_to_dict
 from typing import List, Union, Optional
 import time
 
-from utils.utils import decode_token
-from utils.misc import get_gravatar_url
+from backend.utils.utils import decode_token
+from backend.utils.misc import get_gravatar_url
 
-from apps.web.internal.db import DB
+from backend.apps.web.internal.db import DB
 
 import json
 

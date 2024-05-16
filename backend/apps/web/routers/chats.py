@@ -1,14 +1,14 @@
 from fastapi import Depends, Request, HTTPException, status
 from datetime import datetime, timedelta
 from typing import List, Union, Optional
-from utils.utils import get_current_user, get_admin_user
+from backend.utils.utils import get_current_user, get_admin_user
 from fastapi import APIRouter
 from pydantic import BaseModel
 import json
 import logging
 
-from apps.web.models.users import Users
-from apps.web.models.chats import (
+from backend.apps.web.models.users import Users
+from backend.apps.web.models.chats import (
     ChatModel,
     ChatResponse,
     ChatTitleForm,
@@ -18,7 +18,7 @@ from apps.web.models.chats import (
 )
 
 
-from apps.web.models.tags import (
+from backend.apps.web.models.tags import (
     TagModel,
     ChatIdTagModel,
     ChatIdTagForm,
@@ -26,9 +26,9 @@ from apps.web.models.tags import (
     Tags,
 )
 
-from constants import ERROR_MESSAGES
+from backend.constants import ERROR_MESSAGES
 
-from config import SRC_LOG_LEVELS, ENABLE_ADMIN_EXPORT
+from backend.config import SRC_LOG_LEVELS, ENABLE_ADMIN_EXPORT
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["MODELS"])

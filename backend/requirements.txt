@@ -1,21 +1,21 @@
 fastapi==0.109.2
 uvicorn[standard]==0.22.0
 pydantic==2.7.1
-python-multipart==0.0.9
+python-multipart==0.0.9 # 多表单
 
 Flask==3.0.3
 Flask-Cors==4.0.0
 
-python-socketio==5.11.2
-python-jose==3.3.0
+python-socketio==5.11.2 # socket
+python-jose==3.3.0  # JWT
 passlib[bcrypt]==1.7.4
 uuid==1.30
 
 requests==2.31.0
 aiohttp==3.9.5
-peewee==3.17.3
-peewee-migrate==1.12.2
-psycopg2-binary==2.9.9
+peewee==3.17.3  # 轻巧的Python ORM
+peewee-migrate==1.12.2  # ORM迁移
+psycopg2-binary==2.9.9 # postgresql
 PyMySQL==1.1.0
 bcrypt==4.1.2
 
@@ -24,39 +24,39 @@ litellm[proxy]==1.35.28
 
 boto3==1.34.95
 
-argon2-cffi==23.1.0
-APScheduler==3.10.4
-google-generativeai==0.5.2
+argon2-cffi==23.1.0 # 安全密码哈希算法
+APScheduler==3.10.4 # 强大的Python任务调度库
+google-generativeai==0.5.2  # 访问谷歌生成式AI（Generative AI）API的Python库
 
 langchain==0.1.16
 langchain-community==0.0.34
-langchain-chroma==0.1.0
+langchain-chroma==0.1.0 # 向量数据库
 
-fake-useragent==1.5.1
-chromadb==0.4.24
-sentence-transformers==2.7.0
-pypdf==4.2.0
-docx2txt==0.8
-unstructured==0.11.8
-Markdown==3.6
-pypandoc==1.13
+fake-useragent==1.5.1   # 爬虫模拟user-agent
+chromadb==0.4.24    # 项目数据库
+sentence-transformers==2.7.0    # 计算文本、图像嵌入关联
+pypdf==4.2.0    # pdf处理
+docx2txt==0.8   # docx 2 text
+unstructured==0.11.8    # 无结构化数据识别
+Markdown==3.6   # markdown2 html
+pypandoc==1.13  # 实现不同文档格式之间的转换。Pandoc是一款强大的文档格式转换工具，支持多种格式之间的转换，如Markdown、PDF、Word docx
 pandas==2.2.2
-openpyxl==3.1.2
-pyxlsb==1.0.10
-xlrd==2.0.1
-validators==0.28.1
+openpyxl==3.1.2 # 用于读写Excel 2010 xlsx/xlsm/xltx/xltm文件的Python库
+pyxlsb==1.0.10  # 是一个用于读取Excel 2007 Binary Workbook
+xlrd==2.0.1 # 用于读取Excel（.xls和.xlsb）文件的Python
+validators==0.28.1  # 数据验证的简单库
 
-opencv-python-headless==4.9.0.80
-rapidocr-onnxruntime==1.2.3
+opencv-python-headless==4.9.0.80    # OpenCV的一个包装器
+rapidocr-onnxruntime==1.2.3 # OCR 工具包
 
-fpdf2==2.7.8
-rank-bm25==0.2.2
+fpdf2==2.7.8    # 生成PDF文档的Python库
+rank-bm25==0.2.2    # 常用的文本相似度计算方法，它基于词频和文档长度对文本进行评分
 
-faster-whisper==1.0.1
+faster-whisper==1.0.1   # 音频转文本的开源工具
 
 PyJWT==2.8.0
 PyJWT[crypto]==2.8.0
 
-black==24.4.2
-langfuse==2.27.3
-youtube-transcript-api
+black==24.4.2   # 自动化代码格式化的工具，它可以自动将Python代码格式化为符合PEP-8编码风格指南的代码
+langfuse==2.27.3    # 基于Python语言的FUSE（用户空间文件系统）实现
+youtube-transcript-api  # youtube-transcript-api`是一个用于获取YouTube视频转录或字幕的Python库

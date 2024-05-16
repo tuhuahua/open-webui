@@ -10,7 +10,7 @@ import uuid
 import csv
 
 
-from apps.web.models.auths import (
+from backend.apps.web.models.auths import (
     SigninForm,
     SignupForm,
     AddUserForm,
@@ -21,19 +21,19 @@ from apps.web.models.auths import (
     Auths,
     ApiKey,
 )
-from apps.web.models.users import Users
+from backend.apps.web.models.users import Users
 
-from utils.utils import (
+from backend.utils.utils import (
     get_password_hash,
     get_current_user,
     get_admin_user,
     create_token,
     create_api_key,
 )
-from utils.misc import parse_duration, validate_email_format
-from utils.webhook import post_webhook
-from constants import ERROR_MESSAGES, WEBHOOK_MESSAGES
-from config import WEBUI_AUTH_TRUSTED_EMAIL_HEADER
+from backend.utils.misc import parse_duration, validate_email_format
+from backend.utils.webhook import post_webhook
+from backend.constants import ERROR_MESSAGES, WEBHOOK_MESSAGES
+from backend.config import WEBUI_AUTH_TRUSTED_EMAIL_HEADER
 
 router = APIRouter()
 

@@ -4,7 +4,7 @@ import requests
 
 from typing import List
 
-from apps.ollama.main import (
+from backend.apps.ollama.main import (
     generate_ollama_embeddings,
     GenerateEmbeddingsForm,
 )
@@ -19,7 +19,7 @@ from langchain.retrievers import (
 )
 
 from typing import Optional
-from config import SRC_LOG_LEVELS, CHROMA_CLIENT
+from backend.config import SRC_LOG_LEVELS, CHROMA_CLIENT
 
 
 log = logging.getLogger(__name__)

@@ -11,15 +11,15 @@ import logging
 from pydantic import BaseModel
 
 
-from apps.web.models.users import Users
-from constants import ERROR_MESSAGES
-from utils.utils import (
+from backend.apps.web.models.users import Users
+from backend.constants import ERROR_MESSAGES
+from backend.utils.utils import (
     decode_token,
     get_current_user,
     get_verified_user,
     get_admin_user,
 )
-from config import (
+from backend.config import (
     SRC_LOG_LEVELS,
     OPENAI_API_BASE_URLS,
     OPENAI_API_KEYS,

@@ -29,19 +29,19 @@ from urllib.parse import urlparse
 from typing import Optional, List, Union
 
 
-from apps.web.models.users import Users
-from constants import ERROR_MESSAGES
-from utils.utils import decode_token, get_current_user, get_admin_user
+from backend.apps.web.models.users import Users
+from backend.constants import ERROR_MESSAGES
+from backend.utils.utils import decode_token, get_current_user, get_admin_user
 
 
-from config import (
+from backend.config import (
     SRC_LOG_LEVELS,
     OLLAMA_BASE_URLS,
     ENABLE_MODEL_FILTER,
     MODEL_FILTER_LIST,
     UPLOAD_DIR,
 )
-from utils.misc import calculate_sha256
+from backend.utils.misc import calculate_sha256
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["OLLAMA"])

@@ -45,13 +45,13 @@ import json
 
 import sentence_transformers
 
-from apps.web.models.documents import (
+from backend.apps.web.models.documents import (
     Documents,
     DocumentForm,
     DocumentResponse,
 )
 
-from apps.rag.utils import (
+from backend.apps.rag.utils import (
     get_model_path,
     get_embedding_function,
     query_doc,
@@ -60,15 +60,15 @@ from apps.rag.utils import (
     query_collection_with_hybrid_search,
 )
 
-from utils.misc import (
+from backend.utils.misc import (
     calculate_sha256,
     calculate_sha256_string,
     sanitize_filename,
     extract_folders_after_data_docs,
 )
-from utils.utils import get_current_user, get_admin_user
+from backend.utils.utils import get_current_user, get_admin_user
 
-from config import (
+from backend.config import (
     SRC_LOG_LEVELS,
     UPLOAD_DIR,
     DOCS_DIR,
@@ -93,7 +93,7 @@ from config import (
     ENABLE_LOCAL_WEB_FETCH,
 )
 
-from constants import ERROR_MESSAGES
+from backend.constants import ERROR_MESSAGES
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["RAG"])

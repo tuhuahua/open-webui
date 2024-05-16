@@ -13,14 +13,14 @@ from fastapi import (
 from fastapi.middleware.cors import CORSMiddleware
 from faster_whisper import WhisperModel
 
-from constants import ERROR_MESSAGES
-from utils.utils import (
+from backend.constants import ERROR_MESSAGES
+from backend.utils.utils import (
     get_current_user,
     get_admin_user,
 )
 
-from apps.images.utils.comfyui import ImageGenerationPayload, comfyui_generate_image
-from utils.misc import calculate_sha256
+from backend.apps.images.utils.comfyui import ImageGenerationPayload, comfyui_generate_image
+from backend.utils.misc import calculate_sha256
 from typing import Optional
 from pydantic import BaseModel
 from pathlib import Path
@@ -30,7 +30,7 @@ import base64
 import json
 import logging
 
-from config import (
+from backend.config import (
     SRC_LOG_LEVELS,
     CACHE_DIR,
     IMAGE_GENERATION_ENGINE,

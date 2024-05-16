@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends
 from fastapi.routing import APIRoute
 from fastapi.middleware.cors import CORSMiddleware
-from apps.web.routers import (
+from backend.apps.web.routers import (
     auths,
     users,
     chats,
@@ -11,7 +11,7 @@ from apps.web.routers import (
     configs,
     utils,
 )
-from config import (
+from backend.config import (
     WEBUI_VERSION,
     WEBUI_AUTH,
     DEFAULT_MODELS,

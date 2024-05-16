@@ -17,9 +17,9 @@ import requests
 from pydantic import BaseModel, ConfigDict
 from typing import Optional, List
 
-from utils.utils import get_verified_user, get_current_user, get_admin_user
-from config import SRC_LOG_LEVELS, ENV
-from constants import MESSAGES
+from backend.utils.utils import get_verified_user, get_current_user, get_admin_user
+from backend.config import SRC_LOG_LEVELS, ENV
+from backend.constants import MESSAGES
 
 import os
 
@@ -27,7 +27,7 @@ log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["LITELLM"])
 
 
-from config import (
+from backend.config import (
     ENABLE_LITELLM,
     ENABLE_MODEL_FILTER,
     MODEL_FILTER_LIST,

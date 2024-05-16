@@ -5,7 +5,7 @@ from typing import List, Union, Optional
 from fastapi import APIRouter
 from pydantic import BaseModel
 import json
-from apps.web.models.modelfiles import (
+from backend.apps.web.models.modelfiles import (
     Modelfiles,
     ModelfileForm,
     ModelfileTagNameForm,
@@ -13,8 +13,8 @@ from apps.web.models.modelfiles import (
     ModelfileResponse,
 )
 
-from utils.utils import get_current_user, get_admin_user
-from constants import ERROR_MESSAGES
+from backend.utils.utils import get_current_user, get_admin_user
+from backend.constants import ERROR_MESSAGES
 
 router = APIRouter()
 

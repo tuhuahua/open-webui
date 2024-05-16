@@ -24,16 +24,16 @@ from pathlib import Path
 import json
 
 
-from constants import ERROR_MESSAGES
-from utils.utils import (
+from backend.constants import ERROR_MESSAGES
+from backend.utils.utils import (
     decode_token,
     get_current_user,
     get_verified_user,
     get_admin_user,
 )
-from utils.misc import calculate_sha256
+from backend.utils.misc import calculate_sha256
 
-from config import (
+from backend.config import (
     SRC_LOG_LEVELS,
     CACHE_DIR,
     UPLOAD_DIR,

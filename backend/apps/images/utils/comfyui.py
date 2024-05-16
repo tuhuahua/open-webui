@@ -6,7 +6,7 @@ import urllib.parse
 import random
 import logging
 
-from config import SRC_LOG_LEVELS
+from backend.config import SRC_LOG_LEVELS
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["COMFYUI"])

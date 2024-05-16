@@ -8,9 +8,9 @@ import uuid
 import time
 import logging
 
-from apps.web.internal.db import DB
+from backend.apps.web.internal.db import DB
 
-from config import SRC_LOG_LEVELS
+from backend.config import SRC_LOG_LEVELS
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["MODELS"])
